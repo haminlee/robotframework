@@ -3,12 +3,13 @@
     // Hover to view descriptions of existing attributes.
     "version": "0.2.0",
     "configurations": [
-      {
-        "name": "Python: Current File",
-        "type": "python",
-        "request": "launch",
-        "program": "${file}",
-        "console": "internalConsole"
-      }
-    ]
+    {
+      "type": "robotframework-lsp",
+      "name": "Robot Framework: Launch Template",
+      "request": "launch",
+      "terminal": "integrated",
+      "args": ["-V", "${workspaceFolder}/[my_arg_file]"],
+      "console": "internalConsole"
+    }
+  ]
   }
